@@ -100,7 +100,7 @@ app.get('/test', (req, res) => {
   });
 });
 
-DB_CONNECT(process.env.A_DB_URI)
+DB_CONNECT("mongodb+srv://elicon:Fp4KUihvP3yBNiws@cluster0ritu.adt1u.mongodb.net/?retryWrites=true&w=majority")
   .then(() => {
     console.log(`DB Connected`);
     return app.listen(PORT);
